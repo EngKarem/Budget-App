@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Budget App</title>
+  <link href='style.css' rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+  <h1 class='mt-2'>Budget App</h1>
+  <div class='budget'>
+    <div class='frm'>
+      <form>
+        <div class="mb-3">
+          <label for="budget" class="form-label">please enter your budget</label>
+          <input type="number" class="form-control" id="budget" aria-describedby="emailHelp">
+        </div>
+        <button id="frm1" type="submit" class="btn btn-outline-success">Calculate</button>
+      </form>
+    </div>
+
+    <div class='data'>
+      <div>
+        <h3>budget</h3>
+        <span><i class="fa-solid fa-money-bill-1 fa-lg" style='color:#0a628f;'></i></span>
+        <p id='total_budget' class='value'>0</p>
+      </div>
+      <div>
+        <h3>expenses</h3>
+        <span><i class="fa-regular fa-credit-card fa-lg" style='color:#0a628f;'></i></span>
+        <p id='total_expenses' class='value expenses'>0</p>
+      </div>
+      <div>
+        <h3>balance</h3>
+        <span><i class="fa-solid fa-dollar-sign fa-lg" style='color:#0a628f;'></i></span>
+        <p id='total_balance'>$ 0</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class='expense'>
+    <div class='frm2'>
+      <form>
+        <div class="mb-3">
+          <label for="expense_name" class="form-label">please enter your expense</label>
+          <input type="text" class="form-control" id="expense_name" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="expense_value" class="form-label">please enter expense amount</label>
+          <input type="number" class="form-control" id="expense_value" aria-describedby="emailHelp">
+        </div>
+        <button id="frm2" type="submit" class="btn btn-outline-danger">Add Expense</button>
+      </form>
+    </div>
+
+    <div class='expenses_table'>
+      <table class="table table-borderless">
+        <thead>
+        <tr>
+          <th scope="col">Expense Title</th>
+          <th scope="col">Expense Value</th>
+        </tr>
+        </thead>
+        <tbody id='tbody'>
+
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src='main.js'></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

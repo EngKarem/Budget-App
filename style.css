@@ -1,0 +1,35 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: system-ui,sans-serif;}
+label{text-transform: capitalize}
+h3{color: #a09fa1;}
+h1{text-align: center;}
+:root{
+
+}
+body{border-color: #f8f6f8}
+.budget,.expense{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.budget .frm,.frm2{padding: 20px;border: 3px solid #76af70;width: 40%;}
+.frm2{border-color: #bd0303}
+
+.budget .data{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.value{color: #76af70;font-weight:bold;}
+.value::before{content: '$ ';color: #76af70;}
+.expenses{color: #a12e2a;}
+.expenses::before{content: '$ ';color: #a12e2a;}
+.expenses_table{text-align: center;width: 55%;font-size: 20px}
+.expenses_table th{color: #a09fa1;}
+.expenses_table td{color: #a12e2a;font-weight:bold;}
+.title{text-transform: capitalize;}
+.title::before{content: "- ";color: #a12e2a;}
+.control{cursor: pointer}
